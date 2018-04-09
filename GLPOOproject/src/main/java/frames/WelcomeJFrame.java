@@ -224,7 +224,7 @@ public class WelcomeJFrame extends JFrame {
 				LOGGER.info("Mandelbrot opened");
 				dispose();
 				List<Fractale> fractales = new ArrayList<Fractale>();
-				fractales.add(new Mandelbrot(0, 0, 200, 1070, 540, 150));
+				fractales.add(new Mandelbrot(-0.743f, 0.16f, 200, 1070, 540, 150));
 				new FractaleJFrame(fractales, 1070, 540);
 				break;
 			}
