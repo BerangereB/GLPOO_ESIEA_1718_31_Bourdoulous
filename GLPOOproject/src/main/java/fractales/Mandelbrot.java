@@ -69,7 +69,7 @@ public class Mandelbrot implements Fractale {
 		}
 		if (n == iterations)
 			return 0x00000000; // noir => dans l'ensemble
-		return Color.HSBtoRGB( (float) Math.sqrt( (float) 20*n / iterations), 0.6f, 0.9f); //hors de l'ensemble avec plus ou moins d'itererations
+		return Color.HSBtoRGB( 0.2f + (float) Math.sqrt( (float) 20*n / iterations), 0.6f, 0.9f); //hors de l'ensemble avec plus ou moins d'itererations
 	}
 	
 	@Override

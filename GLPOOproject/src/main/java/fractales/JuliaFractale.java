@@ -104,7 +104,7 @@ public class JuliaFractale implements Fractale {
 			return 0x00000000; // Après 100 itérations la suite (avec cette valeur de z0) ne semble pas
 								// diverger donc on considère qu'elle converge (parfois approximation fausse) =>
 								// noir
-		return Color.HSBtoRGB((float) (color + (float)((1-color)*estompage *n/iterations)) , 0.65f, 0.8f);
+		return Color.HSBtoRGB(0.2f + (float) Math.sqrt( (float) 20*n / iterations), 0.5f, 0.8f);
 	}
 	
 	

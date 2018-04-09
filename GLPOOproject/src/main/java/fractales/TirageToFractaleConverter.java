@@ -95,7 +95,7 @@ public class TirageToFractaleConverter {
 			float X = (float) ((float) 1 / coef_1 * Math.cos((float) (2 * Math.PI * coef_1 / coef_2))); // Léger décalage par rapport
 																							// au centre du bulb
 			coef_4/=50;
-			JuliaFractale julia = new JuliaFractale(Re_C + coef_4*X, Im_C + coef_4*X, echelle, 1070, 540, estompage, couleur);
+			JuliaFractale julia = new JuliaFractale(Re_C, Im_C + X, echelle, 1070, 540, estompage, couleur);
 			
 			return julia;
 			

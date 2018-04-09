@@ -64,8 +64,8 @@ public abstract class ComplexPolyFractal implements Fractale {
 		this.color = color;
 		
 		// On place le centre (X,Y) du dessin au centre de gravité des racines de P1
-		centreX = (float) (roots[0].getReal()+roots[1].getReal()+roots[2].getReal())/3;
-		centreY = (float) (roots[0].getImag()+roots[1].getImag()+roots[2].getImag())/3;
+		centreX = 0;
+		centreY = 0;
 		calcMinMax();
 
 	}

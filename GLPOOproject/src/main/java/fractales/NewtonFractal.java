@@ -24,7 +24,7 @@ public class NewtonFractal extends ComplexPolyFractal {
 			{
 				if(Math.abs(z.getReal() - item.getReal()) < epsilon && Math.abs(z.getImag() - item.getImag()) < epsilon)
 						{
-							return Color.HSBtoRGB((float) (color + (float)((1-color)*n/iterations)) , 0.65f, (float)10*estompage*n/iterations);
+							return Color.HSBtoRGB(color + (float)Math.sqrt((double)estompage*n/iterations) , 0.65f, (float)15*n/iterations);
 							
 						}
 			}
